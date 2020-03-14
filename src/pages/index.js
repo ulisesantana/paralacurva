@@ -3,11 +3,11 @@ import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import "./global.css"
 
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title
-  const iframeWidth =
-    window.innerWidth > 720 ? window.innerWidth * 0.6 : window.innerWidth * 0.8
+  const iframeWidth = window.innerWidth * 0.8
   const iframeHeight = iframeWidth / 1.81
 
   return (
@@ -25,27 +25,32 @@ const BlogIndex = ({ data, location }) => {
       </p>
 
       <h2>Último comunicado por parte del Presidente del Gobierno Español</h2>
-      <iframe
-        width={`${iframeWidth}px`}
-        height={`${iframeHeight}px`}
-        title="Último comunicado por parte del Presidente del Gobierno Español"
-        src="https://www.youtube.com/embed/eakx-GWKoDQ"
-        frameborder="0"
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-      ></iframe>
+
+      <div className="iframe-container">
+        <iframe
+          width={`${iframeWidth}`}
+          height={`${iframeHeight}`}
+          title="Último comunicado por parte del Presidente del Gobierno Español"
+          src="https://www.youtube.com/embed/eakx-GWKoDQ"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
 
       <h2>Consejos sanitarios para el aislamiento domiciliario</h2>
-      <iframe
-        width={`${iframeWidth}px`}
-        height={`${iframeHeight}px`}
-        src="https://www.youtube.com/embed/RHfic_GHc50"
-        title="Consejos sanitarios para el aislamiento domiciliario"
-        frameborder="0"
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-      ></iframe>
 
+      <div className="iframe-container">
+        <iframe
+          width={`${iframeWidth}`}
+          height={`${iframeHeight}`}
+          src="https://www.youtube.com/embed/RHfic_GHc50"
+          title="Consejos sanitarios para el aislamiento domiciliario"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
       <a
         href="https://www.mscbs.gob.es/profesionales/saludPublica/ccayes/alertasActual/nCov-China/telefonos.htm"
         target="_blank"
