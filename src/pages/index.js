@@ -7,7 +7,7 @@ import "./global.css"
 
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title
-  const iframeWidth = window.innerWidth * 0.8
+  const iframeWidth = 960
   const iframeHeight = iframeWidth / 1.81
 
   return (
