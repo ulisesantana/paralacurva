@@ -6,6 +6,9 @@ import SEO from "../components/seo"
 
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title
+  const iframeWidth =
+    window.innerWidth > 720 ? window.innerWidth * 0.6 : window.innerWidth * 0.8
+  const iframeHeight = iframeWidth / 1.81
 
   return (
     <Layout location={location} title={siteTitle}>
@@ -23,8 +26,8 @@ const BlogIndex = ({ data, location }) => {
 
       <h2>Último comunicado por parte del Presidente del Gobierno Español</h2>
       <iframe
-        width="auto"
-        height="auto"
+        width={`${iframeWidth}px`}
+        height={`${iframeHeight}px`}
         title="Último comunicado por parte del Presidente del Gobierno Español"
         src="https://www.youtube.com/embed/eakx-GWKoDQ"
         frameborder="0"
@@ -34,8 +37,8 @@ const BlogIndex = ({ data, location }) => {
 
       <h2>Consejos sanitarios para el aislamiento domiciliario</h2>
       <iframe
-        width="auto"
-        height="auto"
+        width={`${iframeWidth}px`}
+        height={`${iframeHeight}px`}
         src="https://www.youtube.com/embed/RHfic_GHc50"
         title="Consejos sanitarios para el aislamiento domiciliario"
         frameborder="0"
