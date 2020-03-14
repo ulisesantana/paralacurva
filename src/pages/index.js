@@ -1,48 +1,55 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { rhythm } from "../utils/typography"
 
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title
-  const posts = data.allMarkdownRemark.edges
 
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title="Inicio" />
       <p>
-        Esta página está hecha para tratar de difundir información útil para afrontar la pandemia del coronavirus (COVID-19) en España.
+        Para el crecimiento exponencial de la curva de infectados de
+        coronavirus.
+      </p>
+      <p>
+        Esta página está hecha para tratar de difundir información útil para
+        afrontar la pandemia del coronavirus (COVID-19) en España. De esta
+        manera cuanto más informados estemos más conseguiremos evitar que hayan
+        más infectados.
       </p>
 
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/eakx-GWKoDQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      {posts.map(({ node }) => {
-        const title = node.frontmatter.title || node.fields.slug
-        return (
-          <article key={node.fields.slug}>
-            <header>
-              <h3
-                style={{
-                  marginBottom: rhythm(1 / 4),
-                }}
-              >
-                <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
-                  {title}
-                </Link>
-              </h3>
-              <small>{node.frontmatter.date}</small>
-            </header>
-            <section>
-              <p
-                dangerouslySetInnerHTML={{
-                  __html: node.frontmatter.description || node.excerpt,
-                }}
-              />
-            </section>
-          </article>
-        )
-      })}
+      <h2>Último comunicado por parte del Presidente del Gobierno Español</h2>
+      <iframe
+        width="auto"
+        height="auto"
+        title="Último comunicado por parte del Presidente del Gobierno Español"
+        src="https://www.youtube.com/embed/eakx-GWKoDQ"
+        frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+
+      <h2>Consejos sanitarios para el aislamiento domiciliario</h2>
+      <iframe
+        width="auto"
+        height="auto"
+        src="https://www.youtube.com/embed/RHfic_GHc50"
+        title="Consejos sanitarios para el aislamiento domiciliario"
+        frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+
+      <a
+        href="https://www.mscbs.gob.es/profesionales/saludPublica/ccayes/alertasActual/nCov-China/telefonos.htm"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <h2>Teléfonos de información por comunidad autónoma</h2>
+      </a>
     </Layout>
   )
 }
@@ -54,21 +61,6 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
-      }
-    }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
-      edges {
-        node {
-          excerpt
-          fields {
-            slug
-          }
-          frontmatter {
-            date(formatString: "MMMM DD, YYYY", locale: "es")
-            title
-            description
-          }
-        }
       }
     }
   }
