@@ -15,6 +15,8 @@ const BlogIndex = ({ data, location }) => {
       <p>
         Esta página está hecha para tratar de difundir información útil para afrontar la pandemia del coronavirus (COVID-19) en España.
       </p>
+
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/eakx-GWKoDQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       {posts.map(({ node }) => {
         const title = node.frontmatter.title || node.fields.slug
         return (
