@@ -1,17 +1,29 @@
 div.iframe-container > iframe {
   width: 100%;
 }
+
 div.iframe-container {
   position: relative;
 }
+
 div.iframe-container::before {
   content: "";
   display: block;
   padding-bottom: calc(100% / (16 / 9));
 }
+
 div.iframe-container > :first-child {
   position: absolute;
   top: 0;
   left: 0;
   height: 100%;
+}
+
+footer {
+  padding-top: 10vh;
+  text-align: center;
+}
+
+.content.transition-height {
+  transition: display ease-out 0.3s;
 }

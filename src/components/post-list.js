@@ -6,7 +6,7 @@ import { rhythm } from "../utils/typography"
 export const PostList = () => {
   const data = useStaticQuery(graphql`
     query {
-      allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+      allMdx(sort: { fields: [frontmatter___date], order: DESC }) {
         edges {
           node {
             excerpt
@@ -24,7 +24,7 @@ export const PostList = () => {
     }
   `)
 
-  return data.allMarkdownRemark.edges.map(({ node }) => {
+  return data.allMdx.edges.map(({ node }) => {
     const title = node.frontmatter.title || node.fields.slug
     return (
       <article key={node.fields.slug}>

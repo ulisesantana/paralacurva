@@ -12,6 +12,7 @@ module.exports = {
         name: `blog`,
       },
     },
+    `gatsby-plugin-mdx`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
