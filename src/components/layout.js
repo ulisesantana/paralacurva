@@ -12,7 +12,6 @@ const Layout = ({ location, title, children }) => {
       <h1
         style={{
           ...scale(1.5),
-          marginBottom: rhythm(1.5),
           marginTop: 0,
         }}
       >
@@ -63,8 +62,8 @@ const Layout = ({ location, title, children }) => {
       <footer>
         Hecho con
         {` `}
-        <a href="https://www.gatsbyjs.org">Gatsby</a> 
-        {`  y ❤️`} 
+        <a href="https://www.gatsbyjs.org">Gatsby</a>
+        {`  y ❤️`}
       </footer>
     </div>
   )

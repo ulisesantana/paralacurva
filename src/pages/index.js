@@ -3,7 +3,9 @@ import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Info from "../components/info"
 import "./global.css"
+import "semantic-ui-css/semantic.min.css"
 
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title
@@ -13,24 +15,30 @@ const BlogIndex = ({ data, location }) => {
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title="Inicio" />
-      <p>
-        Para el crecimiento exponencial de la curva de infectados de
-        coronavirus.
-      </p>
+      <p>Para el crecimiento exponencial de infectados de coronavirus.</p>
       <p>
         Esta página está hecha para tratar de difundir información útil para
         afrontar la pandemia del coronavirus (COVID-19) en España. De esta
-        manera cuanto más informados estemos más conseguiremos evitar que hayan
+        manera, cuanto más informados estemos más conseguiremos evitar que haya
         más infectados.
       </p>
 
-      <h2>Último comunicado por parte del Presidente del Gobierno Español</h2>
+      <p>
+        Consulta la{" "}
+        <a href="https://covid19.isciii.es/" target="_blank">
+          situación de COVID-19 en España
+        </a>
+      </p>
+
+      <Info />
+
+      <h2>Comunicado por parte del Presidente del Gobierno Español</h2>
 
       <div className="iframe-container">
         <iframe
-          width={`${iframeWidth}`}
-          height={`${iframeHeight}`}
-          title="Último comunicado por parte del Presidente del Gobierno Español"
+          width={iframeWidth}
+          height={iframeHeight}
+          title="Comunicado por parte del Presidente del Gobierno Español"
           src="https://www.youtube.com/embed/eakx-GWKoDQ"
           frameborder="0"
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
