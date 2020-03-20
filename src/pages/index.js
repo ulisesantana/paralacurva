@@ -25,14 +25,21 @@ const BlogIndex = ({ data, location }) => {
 
       <p>
         Consulta la{" "}
-        <a href="https://covid19.isciii.es/" target="_blank">
+        <a
+          href="https://covid19.isciii.es/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           situación de COVID-19 en España
         </a>
       </p>
 
       <Info />
 
-      <h2>Comunicado por parte del Presidente del Gobierno Español</h2>
+      <h2>
+        Comunicado de Estado de Alerta por parte del Presidente del Gobierno
+        Español
+      </h2>
 
       <div className="iframe-container">
         <iframe
