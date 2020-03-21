@@ -27,3 +27,8 @@ footer {
 .content.transition-height {
   transition: display ease-out 0.3s;
 }
+
+p ul,
+p ol {
+  margin-left: 40px;
+}
