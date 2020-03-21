@@ -17,10 +17,10 @@ const BlogIndex = ({ data, location }) => {
       <SEO title="Inicio" />
       <p>Para el crecimiento exponencial de infectados de coronavirus.</p>
       <p>
-        Esta página está hecha para tratar de difundir información útil para
-        afrontar la pandemia del coronavirus (COVID-19) en España. De esta
-        manera, cuanto más informados estemos más conseguiremos evitar que haya
-        más infectados.
+        Esta página está hecha para tratar de difundir información útil y veraz
+        para afrontar la pandemia del coronavirus (COVID-19) en España. De esta
+        manera, cuanto mejor informados estemos más infecciones conseguiremos
+        evitar.
       </p>
       <p>
         Consulta la{" "}
@@ -45,8 +45,8 @@ const BlogIndex = ({ data, location }) => {
         </a>
       </blockquote>{" "}
       <h2>
-        Comunicado de Estado de Alerta por parte del Presidente del Gobierno
-        Español
+        14/03/2019 - Comunicado de Estado de Alarma por parte del Presidente del
+        Gobierno Español
       </h2>
       <div className="iframe-container">
         <iframe
@@ -54,6 +54,22 @@ const BlogIndex = ({ data, location }) => {
           height={iframeHeight}
           title="Comunicado por parte del Presidente del Gobierno Español"
           src="https://www.youtube.com/embed/eakx-GWKoDQ"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <h2>
+        21/03/2019 - El Presidente del Gobierno Español comparece para hablar
+        sobre la crisis del coronavirus una semana después de declarar el Estado
+        de Alarma
+      </h2>
+      <div className="iframe-container">
+        <iframe
+          width={iframeWidth}
+          height={iframeHeight}
+          title="Comunicado por parte del Presidente del Gobierno Español"
+          src="https://www.youtube.com/embed/XyFDwOvVycY"
           frameborder="0"
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen
