@@ -180,7 +180,7 @@ const InfoPage = () => {
           <p>
             Las medidas genéricas de protección individual frente a enfermedades
             respiratorias incluyen:
-            <ul style={{ marginLeft: "40px" }}>
+            <ul>
               <li>
                 Higiene de manos frecuente (lavado con agua y jabón o soluciones
                 alcohólicas), especialmente después de contacto directo con
@@ -200,7 +200,7 @@ const InfoPage = () => {
                 Evitar tocarse los ojos, la nariz y la boca, ya que las manos
                 facilitan la transmisión.
               </li>
-              <li>No salir de casa a menos que sea .</li>
+              <li>No salir de casa a menos que sea estrictamente necesario.</li>
             </ul>
           </p>
           <p>
@@ -287,15 +287,15 @@ const InfoPage = () => {
         </Accordion.Content>
 
         <Accordion.Title
-          active={activeIndex === 9}
-          index={9}
+          active={activeIndex === 10}
+          index={10}
           onClick={handleClick}
         >
           ¿SE ESTÁN HACIENDO PRUEBAS PARA DIAGNOSTICAR LA INFECCIÓN?
         </Accordion.Title>
         <Accordion.Content
           className="transition-height"
-          active={activeIndex === 9}
+          active={activeIndex === 10}
         >
           <p>
             En el escenario actual de transmisión comunitaria sostenida se ha
@@ -308,6 +308,125 @@ const InfoPage = () => {
           <p>
             Se podrá considerar la realización de test diagnóstico a personas
             especialmente vulnerables, según valoración clínica individualizada.
+          </p>
+        </Accordion.Content>
+
+        <Accordion.Title
+          active={activeIndex === 11}
+          index={11}
+          onClick={handleClick}
+        >
+          MITOS DEL CORONAVIRUS
+        </Accordion.Title>
+        <Accordion.Content
+          className="transition-height"
+          active={activeIndex === 11}
+        >
+          <p>
+            <ol>
+              <li>
+                <b>El coronavirus desparecerá en los meses de verano:</b> Falso.
+                Anteriores pandemias no siguieron patrones climatológicos,
+                además que cuando llegue el verano, será invierno en el
+                hemisferio sur. El virus es global.
+              </li>
+              <li>
+                <b>
+                  En verano el coronavirus se contagiará más rápido debido a las
+                  picaduras de los mosquitos:
+                </b>{" "}
+                Falso. Esta infección se contagia por gotas minúsculas que se
+                salen de nuestras vías respiratorias y fluyen en el aire, no por
+                sangre. Los mosquitos no tienen nada que ver con el contagio del
+                coronavirus.
+              </li>
+              <li>
+                <b>
+                  Si puedes mantener la respiración más de 10 segundos puedes
+                  estar seguro que no estás infectado de coronavirus:
+                </b>{" "}
+                Falso. La mayoría de los pacientes jóvenes infectados con
+                coronavirus pueden aguantar la respiración más de 10 segundos
+                sin problemas. Por otro lado, la mayoría de los ancianos,
+                infectados o no,no pueden.
+              </li>
+              <li>
+                <b>
+                  Si donas sangre el banco de sangre se encargará de hacerte la
+                  prueba para saber si estás infectado de coronavirus:
+                </b>{" "}
+                Falso. No hay ningún banco de sangre que esté haciendo estas
+                pruebas. Si donas sangre que sea para ayudar a los demás.
+              </li>
+              <li>
+                <b>
+                  El coronavirus vive en la garganta por lo que si bebemos
+                  grandes cantidades de agua el virus será empujado hacia el
+                  estómago donde los ácidos gástricos lo matarán:
+                </b>{" "}
+                Falso. El virus puede entrar por la garganta, pero penetra en
+                las células del huésped. No puedes arrastrarlo hasta el
+                estómago. Beber mucha agua sólo dará ganas de ir al baño.
+              </li>
+              <li>
+                <b>
+                  Todo esto de la cuarentena y el distanciamento social es una
+                  exageración. Ya verás que el coronavirus no causa mucho daño:
+                </b>{" "}
+                Falso. Si te da la impresión que no hay muchas infecciones es
+                porque el distanciamiento social funciona, no porque el virus no
+                sea tan contagioso.
+              </li>
+              <li>
+                <b>
+                  Los accidentes de coche causan 30.000 muertes al año. ¿A qué
+                  viene tanto jaleo con el coronavirus?:
+                </b>{" "}
+                Los accidentes de coche no son contagiosos, sus muertes no se
+                duplican cada 3 días, no causa pánico en masa o colapsa
+                supermercados.
+              </li>
+              <li>
+                <b>
+                  Los desinfectantes para manos son mejores que el agua y el
+                  jabón:
+                </b>{" "}
+                Falso. El agua y el jabón en realidad matan y eliminan el virus
+                de la piel (no puede penetrar en las células de la piel), además
+                de limpiar la suciedad visible de las manos.
+              </li>
+              <li>
+                <b>
+                  Una de las mejores estrategias para prevenir COVID-19 es
+                  limpiar cada pomo de puerta de su hogar con desinfectantes:
+                </b>{" "}
+                Falso. Lavarse las manos / mantener una distancia de 2 metros es
+                la mejor práctica. A menos que esté atendiendo a un paciente con
+                COVID en su hogar, las superficies de su hogar no deberían ser
+                un gran riesgo.
+              </li>
+              <li>
+                <b>
+                  COVID-19 fue difundido deliberadamente por (según la ideología
+                  política de quien lo dice) el ejército estadounidense o chino:
+                </b>{" "}
+                Falso. Este nuevo coronavirus es fruto de la evolución natural
+                como lo han sido otros en el pasado: la gripe aviar, gripe
+                porcina o SARS entre otros.
+              </li>
+            </ol>
+
+            <small>
+              Basado en las{" "}
+              <a
+                rel="noopener noreferrer"
+                target="_blank"
+                href="https://twitter.com/FaheemYounus/status/1239710939630448647"
+              >
+                declaraciones del Dr. Faheem Younus
+              </a>
+              , jefe de enfermedades infecciosas de la universidad de Maryland.
+            </small>
           </p>
         </Accordion.Content>
       </Accordion>
