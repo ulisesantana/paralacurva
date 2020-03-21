@@ -22,7 +22,6 @@ const BlogIndex = ({ data, location }) => {
         manera, cuanto más informados estemos más conseguiremos evitar que haya
         más infectados.
       </p>
-
       <p>
         Consulta la{" "}
         <a
@@ -33,14 +32,22 @@ const BlogIndex = ({ data, location }) => {
           situación de COVID-19 en España
         </a>
       </p>
-
       <Info />
-
+      <h2>Asegúrate que te estás limpiando bien las manos</h2>
+      <blockquote class="twitter-tweet">
+        <p lang="es" dir="ltr">
+          No asumamos que lo estamos haciendo bien. Cómo lavarse las manos:{" "}
+          <a href="https://t.co/NxzY4XbI19">pic.twitter.com/NxzY4XbI19</a>
+        </p>
+        &mdash; Pablo Jimeno 🔍 (@pablojimeno){" "}
+        <a href="https://twitter.com/pablojimeno/status/1240970417495592962?ref_src=twsrc%5Etfw">
+          March 20, 2020
+        </a>
+      </blockquote>{" "}
       <h2>
         Comunicado de Estado de Alerta por parte del Presidente del Gobierno
         Español
       </h2>
-
       <div className="iframe-container">
         <iframe
           width={iframeWidth}
@@ -52,9 +59,7 @@ const BlogIndex = ({ data, location }) => {
           allowfullscreen
         ></iframe>
       </div>
-
       <h2>Consejos sanitarios para el aislamiento domiciliario</h2>
-
       <div className="iframe-container">
         <iframe
           width={`${iframeWidth}`}
