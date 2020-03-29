@@ -325,8 +325,9 @@ const InfoPage = () => {
           <p>
             <ol>
               <li>
-                <b>El coronavirus desparecerá en los meses de verano:</b> Falso.
-                Anteriores pandemias no siguieron patrones climatológicos,
+                <b>El coronavirus desparecerá en los meses de verano:</b> 
+                <br/><br/>
+                Falso. Anteriores pandemias no siguieron patrones climatológicos,
                 además que cuando llegue el verano, será invierno en el
                 hemisferio sur. El virus es global.
               </li>
@@ -335,6 +336,7 @@ const InfoPage = () => {
                   En verano el coronavirus se contagiará más rápido debido a las
                   picaduras de los mosquitos:
                 </b>{" "}
+                <br/><br/>
                 Falso. Esta infección se contagia por gotas minúsculas que se
                 salen de nuestras vías respiratorias y fluyen en el aire, no por
                 sangre. Los mosquitos no tienen nada que ver con el contagio del
@@ -345,6 +347,7 @@ const InfoPage = () => {
                   Si puedes mantener la respiración más de 10 segundos puedes
                   estar seguro que no estás infectado de coronavirus:
                 </b>{" "}
+                <br/><br/>
                 Falso. La mayoría de los pacientes jóvenes infectados con
                 coronavirus pueden aguantar la respiración más de 10 segundos
                 sin problemas. Por otro lado, la mayoría de los ancianos,
@@ -355,6 +358,7 @@ const InfoPage = () => {
                   Si donas sangre el banco de sangre se encargará de hacerte la
                   prueba para saber si estás infectado de coronavirus:
                 </b>{" "}
+                <br/><br/>
                 Falso. No hay ningún banco de sangre que esté haciendo estas
                 pruebas. Si donas sangre que sea para ayudar a los demás.
               </li>
@@ -364,6 +368,7 @@ const InfoPage = () => {
                   grandes cantidades de agua el virus será empujado hacia el
                   estómago donde los ácidos gástricos lo matarán:
                 </b>{" "}
+                <br/><br/>
                 Falso. El virus puede entrar por la garganta, pero penetra en
                 las células del huésped. No puedes arrastrarlo hasta el
                 estómago. Beber mucha agua sólo dará ganas de ir al baño.
@@ -373,6 +378,7 @@ const InfoPage = () => {
                   Todo esto de la cuarentena y el distanciamento social es una
                   exageración. Ya verás que el coronavirus no causa mucho daño:
                 </b>{" "}
+                <br/><br/>
                 Falso. Si te da la impresión que no hay muchas infecciones es
                 porque el distanciamiento social funciona, no porque el virus no
                 sea tan contagioso.
@@ -391,6 +397,7 @@ const InfoPage = () => {
                   Los desinfectantes para manos son mejores que el agua y el
                   jabón:
                 </b>{" "}
+                <br/><br/>
                 Falso. El agua y el jabón en realidad matan y eliminan el virus
                 de la piel (no puede penetrar en las células de la piel), además
                 de limpiar la suciedad visible de las manos.
@@ -400,6 +407,7 @@ const InfoPage = () => {
                   Una de las mejores estrategias para prevenir COVID-19 es
                   limpiar cada pomo de puerta de su hogar con desinfectantes:
                 </b>{" "}
+                <br/><br/>
                 Falso. Lavarse las manos / mantener una distancia de 2 metros es
                 la mejor práctica. A menos que esté atendiendo a un paciente con
                 COVID en su hogar, las superficies de su hogar no deberían ser
@@ -410,9 +418,29 @@ const InfoPage = () => {
                   COVID-19 fue difundido deliberadamente por (según la ideología
                   política de quien lo dice) el ejército estadounidense o chino:
                 </b>{" "}
+                <br/><br/>
                 Falso. Este nuevo coronavirus es fruto de la evolución natural
                 como lo han sido otros en el pasado: la gripe aviar, gripe
                 porcina o SARS entre otros.
+              </li>
+              <li>
+                <b>
+                  Como cualquier otro virus, (COVID-19) tiene una baja vibración, 
+                  con una estructura cerrada de circuito electromagnético, con una 
+                  frecuencia de resonancia de aproximadamente 5,5 Hz – 14,5 Hz. 
+                  En las gamas más altas no está activo y, a partir de las gamas 
+                  de 25,5 Hz y superiores, el virus muere….
+                  <br/><br/>
+                  Para una persona que vive en altas vibraciones, es decir, en el Alma, 
+                  no es más peligrosa que las infecciones respiratorias agudas, 
+                  porque el cuerpo de un hombre sano «vibra» en las gamas más altas. 
+                  Sólo ocasionalmente, por varias razones, se desliza en vibraciones más bajas.
+                </b>{" "}
+                <br/><br/>
+                Falso. Este mensaje, basado en una entrada de blog, circula por WhatsApp  
+                y no tiene validez científica en absoluto. Su discurso se basa en "vibraciones", 
+                y en la fortaleza que supuestamente llegaríamos a conseguir a través sesiones 
+                de meditación, lo cual no tiene ningún tipo de fundamento científico.
               </li>
             </ol>
 
@@ -425,7 +453,7 @@ const InfoPage = () => {
               >
                 declaraciones del Dr. Faheem Younus
               </a>
-              , jefe de enfermedades infecciosas de la universidad de Maryland.
+              , jefe de enfermedades infecciosas de la universidad de Maryland. 
             </small>
           </p>
         </Accordion.Content>

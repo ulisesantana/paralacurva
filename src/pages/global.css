@@ -32,3 +32,7 @@ p ul,
 p ol {
   margin-left: 40px;
 }
+
+ol b {
+  font-style: italic;
+}

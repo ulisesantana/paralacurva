@@ -44,37 +44,6 @@ const BlogIndex = ({ data, location }) => {
           March 20, 2020
         </a>
       </blockquote>{" "}
-      <h2>
-        14/03/2019 - Comunicado de Estado de Alarma por parte del Presidente del
-        Gobierno Español
-      </h2>
-      <div className="iframe-container">
-        <iframe
-          width={iframeWidth}
-          height={iframeHeight}
-          title="Comunicado por parte del Presidente del Gobierno Español"
-          src="https://www.youtube.com/embed/eakx-GWKoDQ"
-          frameborder="0"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
-      </div>
-      <h2>
-        21/03/2019 - El Presidente del Gobierno Español comparece para hablar
-        sobre la crisis del coronavirus una semana después de declarar el Estado
-        de Alarma
-      </h2>
-      <div className="iframe-container">
-        <iframe
-          width={iframeWidth}
-          height={iframeHeight}
-          title="Comunicado por parte del Presidente del Gobierno Español"
-          src="https://www.youtube.com/embed/XyFDwOvVycY"
-          frameborder="0"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
-      </div>
       <h2>Consejos sanitarios para el aislamiento domiciliario</h2>
       <div className="iframe-container">
         <iframe
@@ -94,6 +63,57 @@ const BlogIndex = ({ data, location }) => {
       >
         <h2>Teléfonos de información por comunidad autónoma</h2>
       </a>
+      <h2>
+        Comunicados oficiales del Presidente del Gobierno Español
+      </h2>
+      <h3>
+        14/03/2019 - Comunicado de Estado de Alarma por parte del Presidente del
+        Gobierno Español
+      </h3>
+      <div className="iframe-container">
+        <iframe
+          width={iframeWidth}
+          height={iframeHeight}
+          title="Primer comunicado por parte del Presidente del Gobierno Español"
+          src="https://www.youtube.com/embed/eakx-GWKoDQ"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <h3>
+        21/03/2019 - El Presidente del Gobierno Español comparece para hablar
+        sobre la crisis del coronavirus una semana después de declarar el Estado
+        de Alarma
+      </h3>
+      <div className="iframe-container">
+        <iframe
+          width={iframeWidth}
+          height={iframeHeight}
+          title="Segundo comunicado por parte del Presidente del Gobierno Español"
+          src="https://www.youtube.com/embed/XyFDwOvVycY"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <h3>
+        28/03/2019 - El Presidente del Gobierno Español comparece para comunicar 
+        que en España se deberán interrumpir la actividad de todos los empleos 
+        «no esenciales» hasta el 9 de abril
+      </h3>
+      <div className="iframe-container">
+        <iframe
+          width={iframeWidth}
+          height={iframeHeight}
+          title="Tercer comunicado por parte del Presidente del Gobierno Español"
+          src="https://www.youtube.com/embed/nAkH1Co56zQ"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+      
     </Layout>
   )
 }
